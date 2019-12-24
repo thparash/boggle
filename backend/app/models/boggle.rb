@@ -1,9 +1,9 @@
-class Boggle
+class Boggle < ApplicationRecord
     attr_accessor :board, :visited_board, :found_words
-    def initialize(num_rows, num_cols, path_to_dictionary_file='/public/words.txt')
+    def initialize(board, path_to_dictionary_file='/public/words.txt')
         @found_words = {}
-        @board = BoardFactory.create(:board_with_random_letters, num_rows, num_cols)
-        @visited_board = BoardFactory.create(:board_with_false_values, num_rows, num_cols)
+        @board = board
+        @visited_board = BoardFactory.create(:board_with_false_values, @board.num_rows, @board.num_columns)
         
         create_trie_for_dictionary_words
         find_valid_words_in_board

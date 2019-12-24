@@ -17,3 +17,20 @@ class Trie
         current_node[@end_symbol] = word
     end
 end
+
+
+# {
+#     "c":{
+#         "a": {
+#             "t": {
+#                 "*": "cat"
+#             }
+#         },
+#         "o":{
+#             "w":{
+#                 "*": "cow"
+#             }
+#         }
+#     }
+# }
+

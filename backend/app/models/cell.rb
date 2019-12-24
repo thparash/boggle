@@ -1,7 +1,7 @@
 class Cell
     attr_accessor :value, :pos_x, :pos_y
 
-    def initialize(value, pos_x,pos_y)
+    def initialize(value, pos_x, pos_y)
         @value = value
         @pos_x = pos_x
         @pos_y = pos_y
