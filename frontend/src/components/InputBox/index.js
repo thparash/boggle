@@ -23,9 +23,9 @@ const InputBox = () => {
 
       // add the word to scoreboard if valid and is not already added to the list
       if (foundWords[userInput]) {
-        // if (!checkIfAWordAlreadyExists(userInput)) {
-        submitCorrectWords(userInput)(dispatch);
-        // }
+        if (!checkIfAWordAlreadyExists(userInput)) {
+          submitCorrectWords(userInput)(dispatch);
+        }
         setIsValidWord(true);
       } else {
         setIsValidWord(false);

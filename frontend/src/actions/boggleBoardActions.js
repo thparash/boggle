@@ -10,7 +10,7 @@ export const initializeGame = () => async dispatch => {
     type: START_GAME_INITIALIZATION
   });
 
-  let response = await fetch("http://localhost:3000/api/v1/boggle/new");
+  let response = await fetch("http://localhost:8000/api/v1/boggle/new");
   let data = await response.json();
   const foundWords = data.words;
   const cells = data.board.cells;
