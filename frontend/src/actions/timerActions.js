@@ -1,8 +1,12 @@
-import { UPDATE_TIMER } from "./types";
+import { UPDATE_TIMER, RESET_TIMER } from "./types";
 
 let timer = null;
 
 export const startTimer = () => dispatch => {
+  dispatch({
+    type: RESET_TIMER
+  });
+
   timer = setInterval(() => {
     dispatch({
       type: UPDATE_TIMER

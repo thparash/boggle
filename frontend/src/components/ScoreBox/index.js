@@ -17,7 +17,9 @@ const ScoreBox = () => {
         YOUR SCORE: <span className="score">{score} points</span>
       </h4>
       <h4>
-        WORDS REMAINING: <span className="score">{renderWordsRemaining()}</span>
+        WORDS FOUND: <span className="score">{correctWords.length} </span>
+        WORDS REMAINING:
+        <span className="score"> {renderWordsRemaining()} </span>
       </h4>
     </div>
   );

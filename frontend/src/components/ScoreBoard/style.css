@@ -1,6 +1,7 @@
 .score-board {
     background-color: #fff;
     text-transform: uppercase;
+    overflow-y: scroll;
 }
 
 ul.correct-words {

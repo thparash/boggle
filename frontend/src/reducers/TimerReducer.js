@@ -1,4 +1,4 @@
-import { UPDATE_TIMER } from "../actions/types";
+import { UPDATE_TIMER, RESET_TIMER } from "../actions/types";
 
 const GAME_TIME_IN_SECONDS = 120;
 
@@ -20,6 +20,11 @@ export default function(state = initalState, action) {
           seconds: state.seconds - 1
         };
       }
+    case RESET_TIMER:
+      return {
+        ...state,
+        seconds: GAME_TIME_IN_SECONDS
+      };
     default:
       return state;
   }
