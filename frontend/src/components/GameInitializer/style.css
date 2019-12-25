@@ -1,0 +1,13 @@
+h1.title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main {
+    margin-top: 10%;
+    background-color: #282c34;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}

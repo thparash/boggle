@@ -1,0 +1,21 @@
+.timer {
+    text-align: center;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1em;
+}
+
+.timer h4 {
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+}
+
+.warning {
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.time {
+    color: #61dafb;
+    font-weight: 600;
+}

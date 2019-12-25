@@ -1,0 +1,14 @@
+.score-box {
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1em;
+}
+
+.score-box h4 {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.score {
+    color: #61dafb;
+}
