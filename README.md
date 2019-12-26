@@ -2,6 +2,8 @@
 
 A Boogle game built using Ruby on Rails and ReactJS. A player gets two minutes to find as many words as possible. Each word must have at least three letters.
 
+[![](https://user-images.githubusercontent.com/120977/71459621-7baf7a80-27d0-11ea-8984-7f6faaab8048.png)](https://user-images.githubusercontent.com/120977/71459621-7baf7a80-27d0-11ea-8984-7f6faaab8048.png)
+
 ### Tech
 
 Boggle was built using the following technology.
