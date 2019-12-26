@@ -10,6 +10,7 @@ class Cell
     def get_neighboring_cell_positions(board, pos_x, pos_y)
 
         neighbors = []
+        
         if pos_x > 0 && pos_y > 0
             neighbors << [pos_x-1, pos_y-1]
         end

@@ -23,9 +23,9 @@ const InputBox = () => {
 
       // add the word to scoreboard if valid and is not already added to the list
       if (foundWords[userInput]) {
-        // if (!checkIfAWordAlreadyExists(userInput)) {
-        submitCorrectWords(userInput)(dispatch);
-        // }
+        if (!checkIfAWordAlreadyExists(userInput)) {
+          submitCorrectWords(userInput)(dispatch);
+        }
         setIsValidWord(true);
       } else {
         setIsValidWord(false);
@@ -39,6 +39,7 @@ const InputBox = () => {
   return (
     <input
       type="text"
+      autoFocus
       className={isValidWord ? "input-box" : "input-box not-valid-word"}
       value={userInput}
       disabled={isDisabled() ? "disabled" : ""}

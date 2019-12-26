@@ -10,7 +10,7 @@ Boggle was built using the following technology.
 
 - [Ruby on Rails] - for the backend.
 - [React.js] - for the frontend.
-- [Docker] - for contenarization and ease of installation.
+- [Docker] - for containerization and ease of installation.
 
 ### Installation
 
@@ -30,7 +30,7 @@ Then, enter the following docker-compose command to build and start the applicat
 $ docker-compose up --build
 ```
 
-Once the application is ready, you should see a message saying that the server is listening for requests. By default, the application will listen on port 8080.
+Once the application is ready, you should see a message saying that the server is listening for requests. By default, the application will listen on port 8080, but you can change it by editing 'docker-compose.yml' file.
 
 Verify that the application is ready by navigating to your server address in your preferred web browser.
 
