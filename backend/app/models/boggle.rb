@@ -1,6 +1,6 @@
 class Boggle < ApplicationRecord
     attr_accessor :board, :visited_board, :found_words
-    def initialize(board, path_to_dictionary_file='/public/words.txt')
+    def initialize(board)
         @found_words = {}
         @board = board
         @visited_board = BoardFactory.create(:board_with_false_values, @board.num_rows, @board.num_columns)
@@ -55,9 +55,16 @@ class Boggle < ApplicationRecord
     def create_trie_for_dictionary_words
         @trie = Trie.new
 
-        File.readlines(Rails.root.join("public", "words.txt")).each do |word|
-            @trie.add(word.strip)
+        begin
+            File.readlines(Rails.root.join("public", "words.txt")).each do |word|
+                @trie.add(word.strip)
+            end
+        rescue Errno::ENOENT
+            puts "File not found"
+        rescue ArgumentError
+            puts "File contains unparsable words"
         end
+        
     end
 
 end
