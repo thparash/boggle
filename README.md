@@ -87,3 +87,7 @@ Parash Thapa
 ## License
 
 MIT
+
+## Acknowledgments
+
+This application uses dictionary text file from [https://github.com/dwyl/english-words](https://github.com/dwyl/english-words)
