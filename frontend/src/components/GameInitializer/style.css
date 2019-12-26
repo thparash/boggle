@@ -4,6 +4,14 @@ h1.title {
     text-transform: uppercase;
 }
 
+p.game-instruction {
+    color: #fff;
+    width: 400px;
+    text-align: left;
+    font-style: italic;
+    line-height: 1.3em;
+}
+
 .main {
     margin-top: 10%;
     background-color: #282c34;

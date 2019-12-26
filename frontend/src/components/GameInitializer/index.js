@@ -32,6 +32,12 @@ const GameInitializer = () => {
           <Timer />
           <InputBox />
           <NewGameButton />
+          <p className="game-instruction">
+            This is a Boggle game with a traditional 4x4 board.A player gets 2
+            minutes to find as many words as possible. The game keeps track of
+            scores, and the score is generated based on number of characters in
+            the valid words entered by the player.
+          </p>
         </div>
       )}
     </div>
